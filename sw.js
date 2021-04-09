@@ -6,7 +6,8 @@ self.addEventListener('install', (event) => {
 		'favicon.ico',
 		'index.html',
 		'script.js',
-		'fallback.html'
+		'fallback.html',
+		'manifest.json'
       ]);
     })
   );
