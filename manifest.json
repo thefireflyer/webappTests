@@ -6,7 +6,8 @@
     {
       "src": "icon.png",
       "sizes": "460x460",
-      "type": "image/png"
+      "type": "image/png",
+	  "purpose": "any"
     }
   ],
   "name": "webappTests",
