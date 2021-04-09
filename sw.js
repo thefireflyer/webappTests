@@ -23,6 +23,6 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         return caches.match('fallback.html')
       })
-    });
+    })
   );
 });
