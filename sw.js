@@ -21,7 +21,7 @@ self.addEventListener('fetch', (event) => {
 
         return response;
       }).catch(() => {
-        return caches.match('fallback.html');
+        return caches.match('./fallback.html');
       })
     });
   );
