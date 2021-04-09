@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
     })
   );
 });
-
+/*
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((resp) => {
@@ -25,6 +25,21 @@ self.addEventListener('fetch', (event) => {
       }).catch(() => {
         return caches.match('fallback.html')
       })
+    })
+  );
+});
+*/
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    fetch(event.request).then((response) => {
+        let responseClone = response.clone();
+        caches.open('v1').then((cache) => {
+          cache.put(event.request, responseClone);
+        });
+
+        return response;
+    }).catch(() => {
+        return caches.match(event.request)
     })
   );
 });
