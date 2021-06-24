@@ -1,0 +1,38 @@
+
+body {
+    background: linear-gradient(140deg, magenta, aqua);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  
+  
+      text-align:center;
+      background-color:black;
+      color:white;
+  }
+  
+  .add-button {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 500px;
+    height: 300px;
+    font-size: 60px;
+    background-color: aqua;
+    border-radius:20px;
+  }
+  
+  a {
+    color:darkmagenta;
+    text-decoration:none;
+  }
+
+  
+.pinned-pages {
+    padding-bottom: 5cm;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}

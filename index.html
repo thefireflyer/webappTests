@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
-<title>WebApp</title>
+<title>HomePortal</title>
+
+<meta name="application-name" content="HomePortal">
+<meta name="keywords" content="Custom, Homepage, Chrome, Free, Opensource, thefireflyer, flyingfire">
+<meta name="description" content="A free opensource homepage">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="thefireflyer">
+
 <head>
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <link rel="manifest" href="manifest.json">
-<style>
-body {
-	text-align:center;
-	background-color:black;
-	color:white;
-}
-.add-button {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 500px;
-  height: 300px;
-  font-size: 60px;
-  background-color: aqua;
-  border-radius:20px;
-}
-</style>
-
+<link rel="stylesheet" href="styles.css?rnd=0">
 
 </head>
 
@@ -31,13 +21,31 @@ body {
 </header>
 
 <body>
-<h1>v1.0.11</h1>
-<a href="potatoTomato.html">More pages</a>
-<button class="add-button" id="addBtn">Add to home screen</button>
+
+  <a href="index.html" style="text-decoration: overline;"><h1>HomePortal</h1></a>
 
 
-<script src="script.js"></script>
+  <div class="pinned-pages">
+    <h2>Pinned pages</h2>
 
+    <table>
+      <tr>
+        <td><a href="fallback.html"><img src="img.png" /></a></td>
+        <td><a href="fallback.html"><img src="img.png" /></a></td>
+        <td><a href="fallback.html"><img src="img.png" /></a></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <a href="potatoTomato.html"><h3>More pages</h3></a>
+
+  <button class="add-button" id="addBtn">Add to home screen</button>
+
+
+  <script src="script.js"></script>
+
+  <h4>v1.1.0</h4>
 </body>
 
 <footer style="background-color:#333;padding-bottom:5px;">
