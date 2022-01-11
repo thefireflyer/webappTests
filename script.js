@@ -1,5 +1,5 @@
 //alert("testing");
-
+window.location.replace("https://theflyingfire.github.io/homeportal/");
 
 var width = window.screen.availWidth;
 var height = window.screen.availHeight;
